@@ -11,10 +11,11 @@
     {
       "src": "./images/pwa-icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/pwa-basic/index.html",
   "display": "standalone",
   "background_color": "white",
   "theme_color": "white"
