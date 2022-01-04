@@ -1,6 +1,6 @@
 let cacheName = 'pwa-basic'
-const isHostedOnGithub = window.location.href.indexOf('github')
-console.log('href', window.location.href);
+// const isHostedOnGithub = window.location.href.indexOf('github')
+// console.log('href', window.location.href);
 let filesToCache = [
   '/pwa-basic/',
   '/pwa-basic/index.html',
