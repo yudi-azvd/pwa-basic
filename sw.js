@@ -1,16 +1,10 @@
 let cacheName = 'pwa-basic'
-// const isHostedOnGithub = window.location.href.indexOf('github')
-// console.log('href', window.location.href);
 let filesToCache = [
-  '/pwa-basic/',
-  '/pwa-basic/index.html',
-  '/pwa-basic/js/main.js',
-  '/pwa-basic/css/style.css',
+  './',
+  './index.html',
+  './js/main.js',
+  './css/style.css',
 ]
-
-// if (isHostedOnGithub) {
-//   filesToCache = filesToCache.map(file => 'pwa-basic/' + file)
-// }
 
 self.addEventListener('install', (event) => {
   console.log('[Service Worker] Install');
