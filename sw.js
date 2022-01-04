@@ -7,11 +7,12 @@ let filesToCache = [
 ]
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache)
-    })
-  )
+  console.log('[Service Worker] Install');
+  event.waitUntil((async () => {
+    const cache = await caches.open(cacheName)
+    console.log('[Service Worker] caching content');
+    await cache.addAll(filesToCache)
+  })())
 })
 
 self.addEventListener('fetch', (event) => {
